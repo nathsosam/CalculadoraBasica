@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6B9B9"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnMultiplicacion"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="284dp"
+        android:onClick="btnMultiplicacion_OnClick"
+        android:text="*"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="238dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="372dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/lblNum2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="448dp"
+        android:onClick="btnResultado_OnClick"
+        android:text="Resultado"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblMensaje"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="560dp"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="CALCULADORA"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="284dp"
+        android:onClick="btnDivision_OnClick"
+        android:text="/"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btnMultiplicacion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="208dp"
+        android:onClick="btnSuma_OnClick"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="208dp"
+        android:onClick="btnResta_OnClick"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSuma"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="384dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="Num2."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="Num1."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="12dp"
+        android:text="El resultado es:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResultado" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="Nombre: Geraldyne Sosa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
